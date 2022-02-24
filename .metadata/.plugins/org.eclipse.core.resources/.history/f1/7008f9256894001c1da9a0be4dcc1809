@@ -1,0 +1,22 @@
+package mathematicaloperations;
+
+public class IncrementOperators {
+
+	public static void main(String[] args) {
+		
+		int a = 5;
+		int b = 6;
+		int value = (a)++ + (b)++;// + a-- + ++b;
+		//11
+		//a = 6,b = 7
+		//13
+		//a = 6,b = 8
+		//24
+		
+		System.out.println(value);
+		System.out.println(a++ + b++);
+		System.out.println(a-- + ++b);
+
+	}
+
+}

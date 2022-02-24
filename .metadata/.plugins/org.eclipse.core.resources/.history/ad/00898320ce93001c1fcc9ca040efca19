@@ -1,0 +1,18 @@
+package mathematicaloperations;
+
+import java.util.Scanner;
+
+public class ArithmeticOperations {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Values");
+		System.out.println("Enter the valueOne");
+		int valueOne = sc.nextInt();
+		System.out.println("Enter the valueTwo");
+		int valueTwo = sc.nextInt();
+		
+		//create object of addition class to call add method
+	}
+
+}

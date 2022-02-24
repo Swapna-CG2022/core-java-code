@@ -1,0 +1,28 @@
+package com.cg.oopsinjava;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Student {
+	
+	//variables
+	int studentId;
+	String studentName;
+	Date studentDob;
+	
+	Scanner sc  = new Scanner(System.in);
+	//methods to access above variables
+	void readStudentDetails() {
+		System.out.println("Enter the Student data");
+		System.out.println("Enter the student id");
+		studentId = sc.nextInt();
+		System.out.println("Enter the student name");
+		studentName = sc.nextLine();
+		System.out.println("Enter the student dob in 'dd/MM/yyyy' ");
+		String dob = sc.nextLine();
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		studentDob = sdf.parse(dob);
+	}
+
+}

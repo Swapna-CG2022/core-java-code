@@ -1,0 +1,11 @@
+package mathematicaloperations;
+
+public class Division {
+	
+	public  static void main (String...args) {
+		int valueOne = 10;
+		float valueTwo = 20;
+		valueOne /= valueTwo;		
+		System.out.println("division = " + (valueOne));
+	}
+}

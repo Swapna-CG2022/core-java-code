@@ -1,0 +1,11 @@
+package mathematicaloperations;
+
+public class IncrementOperators {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

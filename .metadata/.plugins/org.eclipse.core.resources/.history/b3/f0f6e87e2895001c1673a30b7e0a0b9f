@@ -1,0 +1,16 @@
+package stringsexample;
+
+public class StringsDemo {
+	
+	public static void main(String[] args) {
+		String str = "This is a String";
+		String quote = new String("Strings In Java");
+		char[] city = {'B','a','n','g','a','l','o','r','e'};
+		String myCity = new String(city);
+		
+		System.out.println(myCity.charAt(0));
+		System.out.println(myCity.substring(5));
+		System.out.println(myCity.substring(2,5));
+	}
+
+}

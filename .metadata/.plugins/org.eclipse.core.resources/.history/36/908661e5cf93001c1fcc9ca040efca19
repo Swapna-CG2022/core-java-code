@@ -1,0 +1,10 @@
+package mathematicaloperations;
+
+public class Division {
+	
+	public  void div(int valueOne,float valueTwo) {
+		
+		System.out.println("division = " + (valueOne / valueTwo));
+
+	}
+}
