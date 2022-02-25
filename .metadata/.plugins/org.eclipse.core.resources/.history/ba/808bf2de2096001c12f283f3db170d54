@@ -1,0 +1,85 @@
+package com.cg.oopsinjava;
+
+import java.text.ParseException;
+import java.util.Scanner;
+
+public class StudentCRUD {
+	//Array of Student Objects
+	Student[] listOfStudents = new Student[3];
+	Student student;
+	int noOfStudents;
+	Scanner sc = new Scanner(System.in);
+	public void menu() throws ParseException {
+		
+		System.out.println("Enter the choice .....");
+		System.out.println("add : to add student in the array");
+		System.out.println("update:to update student in the array");
+		System.out.println("delete:to delete student in the array");
+		System.out.println("display: to display all student");
+		System.out.println("search: to search for a student");
+
+		String choice = sc.nextLine();
+		
+		switch (choice) {
+		case "add":
+			addStudent();
+			break;
+		case "update":
+			updateStudent();
+			break;
+		case "delete":
+			deleteStudent();
+			break;
+		case "display":
+			displayStudent();
+			break;
+		case "search":
+			searchStudent();
+			break;
+		default:
+			System.out.println("Not a proper choice");
+			break;
+		}
+		
+	}
+
+	void searchStudent() {
+		System.out.println("Enter the student details to search");
+		
+	}
+
+	void displayStudent() {
+		System.out.println("Enter the student details to display");
+		//display the student data
+		System.out.println("Enter the number of students");
+		noOfStudents = sc.next
+		for(int i=0;i<listOfStudents.length;i++) {
+			System.out.println(listOfStudents[i]);
+			listOfStudents[i].displayStudentDetails();
+		}
+	}
+
+	void deleteStudent() {
+		System.out.println("Enter the student details to delete");
+		
+	}
+
+	void updateStudent() {
+		System.out.println("Enter the student details to update");
+		
+	}
+
+	void addStudent() throws ParseException {
+		System.out.println("Enter the student details");
+		//creating and adding student objects in the above array
+		for(int i=0;i<listOfStudents.length;i++) {
+			student = new Student();
+			student.readStudentDetails();
+			listOfStudents[i] = student;
+			
+		}
+	}
+
+
+
+}

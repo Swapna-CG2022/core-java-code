@@ -1,0 +1,34 @@
+package com.cg.oopsinjava;
+
+import java.util.Scanner;
+
+public class StudentCRUD {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter the choice .....");
+		System.out.println("add : to add student in the array");
+		System.out.println("update:to update student in the array");
+		System.out.println("delete:to delete student in the array");
+		System.out.println("display: to display all student");
+		System.out.println("search: to search for a student");
+		Scanner sc = new Scanner(System.in);
+		String choice = sc.nextLine();
+		
+		switch (choice) {
+		case "add":
+			addStudent();
+			break;
+
+		default:
+			break;
+		}
+		
+	}
+
+	void addStudent() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

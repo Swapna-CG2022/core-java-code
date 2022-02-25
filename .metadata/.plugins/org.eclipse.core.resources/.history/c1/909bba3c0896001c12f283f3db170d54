@@ -1,0 +1,18 @@
+package stringbufferexample;
+
+public class StringBufferDemo {
+	
+	public static void main(String[] args) {
+		
+		StringBuffer sb = new StringBuffer();
+		System.out.println("String buffer value of empty object = " + sb);
+		String s = "This is a String";
+		StringBuffer sb1 = new StringBuffer(s);
+		System.out.println("String buffer value of String object = " + sb1);
+		sb1.append(" converted into String Buffer");
+		System.out.println("String buffer value after append = " +sb1);
+		
+		System.out.println("Hashcode for sb = " + sb.hashCode());
+	}
+
+}

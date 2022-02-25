@@ -1,0 +1,67 @@
+package com.cg.oopsinjava;
+
+import java.util.Scanner;
+
+public class StudentCRUD {
+
+	public void menu() {
+		
+		System.out.println("Enter the choice .....");
+		System.out.println("add : to add student in the array");
+		System.out.println("update:to update student in the array");
+		System.out.println("delete:to delete student in the array");
+		System.out.println("display: to display all student");
+		System.out.println("search: to search for a student");
+		Scanner sc = new Scanner(System.in);
+		String choice = sc.nextLine();
+		
+		switch (choice) {
+		case "add":
+			addStudent();
+			break;
+		case "update":
+			updateStudent();
+			break;
+		case "delete":
+			deleteStudent();
+			break;
+		case "display":
+			displayStudent();
+			break;
+		case "search":
+			searchStudent();
+			break;
+		default:
+			break;
+		}
+		
+	}
+
+	void searchStudent() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	void displayStudent() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	void deleteStudent() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	void updateStudent() {
+		System.out.println("Enter the student details to update");
+		
+	}
+
+	void addStudent() {
+		System.out.println("Enter the student details");
+		
+	}
+
+
+
+}
