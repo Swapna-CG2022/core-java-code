@@ -16,8 +16,6 @@ public class Student {
 	String studentMobNo;
 	String studentEmail;
 	
-	
-	
 	Scanner sc  = new Scanner(System.in);
 	//methods to access above variables
 	void readStudentDetails() throws ParseException {

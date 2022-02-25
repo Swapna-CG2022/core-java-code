@@ -17,7 +17,7 @@ public class StudentMain {
 		 */
 		
 		//Array of Student Objects
-		Student[] listOfStudents = new Student[2];
+		Student[] listOfStudents = new Student[6];
 		Student student;
 		
 		//creating and adding student objects in the above array
