@@ -53,8 +53,6 @@ public class Student {
 		studentEmail =  sc.nextLine();
 		if(validate(studentEmail)) {
 			System.out.println("Thank you for providing correct email.....");
-		}else {
-			System.out.println("Enter email in specified format (ex:- swapna@gmail.com)");
 		}
 	}
 	
@@ -65,7 +63,7 @@ public class Student {
 		System.out.println("Student name = " + studentName);
 		System.out.println("Student dob = " + studentDob.getDate()+"/"+studentDob.getMonth()+"/"+studentDob.getYear());
 		System.out.println("Student MobNo = " + studentMobNo);
-		System.out.println("Student Email = " + studentEmail);
+	
 	}
 	
 	boolean checkMobileNumber(String mobNo) {

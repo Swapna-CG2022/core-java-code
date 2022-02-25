@@ -51,11 +51,6 @@ public class Student {
 		
 		System.out.println("Enter the Student Email......");
 		studentEmail =  sc.nextLine();
-		if(validate(studentEmail)) {
-			System.out.println("Thank you for providing correct email.....");
-		}else {
-			System.out.println("Enter email in specified format (ex:- swapna@gmail.com)");
-		}
 	}
 	
 	@SuppressWarnings("deprecation")
@@ -65,7 +60,7 @@ public class Student {
 		System.out.println("Student name = " + studentName);
 		System.out.println("Student dob = " + studentDob.getDate()+"/"+studentDob.getMonth()+"/"+studentDob.getYear());
 		System.out.println("Student MobNo = " + studentMobNo);
-		System.out.println("Student Email = " + studentEmail);
+	
 	}
 	
 	boolean checkMobileNumber(String mobNo) {
@@ -73,12 +68,4 @@ public class Student {
 		Matcher match = ptrn.matcher(mobNo);
 		return (match.find() && match.group().equals(mobNo));
 	}
-	
-	public static final Pattern VALID_EMAIL_ADDRESS_REGEX = 
-		    Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
-
-		public static boolean validate(String emailStr) {
-		        Matcher matcher = VALID_EMAIL_ADDRESS_REGEX.matcher(emailStr);
-		        return matcher.find();
-		}
 }

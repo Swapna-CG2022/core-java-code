@@ -11,10 +11,9 @@ public class StudentMain {
 		st.readStudentDetails();
 		st.displayStudentDetails();
 		
-		/*
-		 * Student st1 = new Student(); st1.readStudentDetails();
-		 * st1.displayStudentDetails();
-		 */
+		Student st1 = new Student();
+		st1.readStudentDetails();
+		st1.displayStudentDetails();
 	}
 
 }
