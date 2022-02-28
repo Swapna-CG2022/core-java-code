@@ -1,0 +1,26 @@
+package com.cg.oopsinjava.inheritanceII;
+
+import java.util.Scanner;
+
+public class Employee {
+	
+	int employeeId;
+	String employeeName;
+	String employeeAddress;
+	String employeeCountry;
+	
+	Scanner sc = new Scanner(System.in);
+	void readEmployeeDetails() {
+		System.out.println("Enter the employee details........");
+		System.out.println("Enter the employee id.....");
+		System.out.println("Enter the employee name.....");
+		System.out.println("Enter the employee address.....");
+		System.out.println("Enter the employee country.....");
+		
+	}
+	
+	void printEmployeeDetails() {
+		
+	}
+
+}

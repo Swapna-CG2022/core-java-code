@@ -1,0 +1,13 @@
+package com.cg.oopsinjava.inheritanceII;
+
+public class Employee {
+	
+	int employeeId;
+	String employeeName;
+	float employeeSalary;
+	String employeeAddress;
+	String employeeCountry;
+	
+	
+
+}

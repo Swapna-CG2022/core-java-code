@@ -1,0 +1,8 @@
+package com.cg.oopsinjava.inheritanceII;
+
+public class PermanentEmployee {
+
+	float salaryPerMonth;
+	float totalSalaryPerMonth;
+	float noOfdaysWorked;
+}

@@ -1,0 +1,11 @@
+package com.cg.oopsinjava.inheritance;
+
+public class Triangle extends Shape {
+	
+	//int length,breadth;
+	String typeOfTriangle;
+	
+	
+	
+
+}

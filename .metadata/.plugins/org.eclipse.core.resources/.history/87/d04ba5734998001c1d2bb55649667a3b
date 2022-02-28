@@ -1,0 +1,10 @@
+package com.cg.oopsinjava.encapsulation;
+
+public class Seller {
+	
+	int sellerId;
+	String sellerName;
+	
+	
+
+}

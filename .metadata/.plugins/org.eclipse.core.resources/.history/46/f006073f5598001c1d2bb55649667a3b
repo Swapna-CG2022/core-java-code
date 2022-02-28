@@ -1,0 +1,7 @@
+package com.cg.oopsinjava.inheritance;
+
+public class Triangle {
+	
+	String typeOfTriangle;
+
+}

@@ -1,0 +1,20 @@
+package com.cg.oopsinjava.encapsulation;
+
+import java.util.Scanner;
+
+public class Seller {
+	
+	int sellerId;
+	String sellerName;
+	
+	Scanner sc = new Scanner(System.in);
+	
+	void readSellerDetails() {
+		
+	}
+	
+	void printSellerDetails() {
+		
+	}
+
+}
