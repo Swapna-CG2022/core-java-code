@@ -22,7 +22,7 @@ public class MP3ManagementSystem {
 			switch (choice) {
 			case "add":
 				// addProducts();
-				addProductsUsingScanner();
+				addMP3DataUsingScanner();
 				break;
 			case "display":
 				displayProducts();
@@ -44,10 +44,13 @@ public class MP3ManagementSystem {
 	 */
 
 	public void displayProducts() {
-		System.out.println("ProductId " + "\t" + "Product Name" + "\t" + "Product Price");
+		System.out.println("ProductId" + "\t" + "Product Name" + "\t" + "Product Price"
+							+ "ArtistName" + "\t" + "Duration");
 		for (int i = 0; i < n; i++) {
-			System.out.println(mp3List[i].getProductId() + "\t" + listOfProducts[i].getProductName() + "\t"
-					+ mp3List[i].getProductPrice());
+			System.out.println(mp3List[i].getProductId() + "\t" + mp3List[i].getProductName() + "\t"
+					+ "\t"+ mp3List[i].getProductPrice()
+					+ "\t"+mp3List[i].getArtistName()
+					+ "\t"+ mp3List[i].getDuration());
 		}
 	}
 
@@ -55,19 +58,27 @@ public class MP3ManagementSystem {
 		System.out.println("Enter the number of products");
 		 n= sc.nextInt();
 		for (int i = 0; i < n; i++) {
-			product = new Product();
+			mp3 = new MP3();
 			System.out.println("Enter the details of the product..........");
 			System.out.println("Enter the product id");
-			product.setProductId(sc.nextInt());
+			mp3.setProductId(sc.nextInt());
 			System.out.println("Enter the product name");
 			sc.nextLine();
 			String name = sc.nextLine();
-			product.setProductName(name);
+			mp3.setProductName(name);
 			System.out.println("Enter the product price");
 			//sc.nextLine();
 			float price = sc.nextFloat();
-			product.setProductPrice(price);
-			listOfProducts[i] = product;
+			mp3.setProductPrice(price);
+			System.out.println("Enter the artist name");
+			sc.nextLine();
+			String aname = sc.nextLine();
+			mp3.setArtistName(aname);
+			System.out.println("Enter the duration");
+			//sc.nextLine();
+			float duration = sc.nextFloat();
+			mp3.setDuration(duration);
+			mp3List[i] = mp3;
 		}
 	}
 
