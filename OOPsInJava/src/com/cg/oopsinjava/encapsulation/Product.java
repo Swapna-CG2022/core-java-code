@@ -9,7 +9,7 @@ public class Product {
 	Seller seller = new Seller();
 	Scanner sc = new Scanner(System.in);
 	
-	void readproductDetails() {
+	void readproductDetails() { //method signature
 		//readSellerDetails();
 		System.out.println("Enter the product Details");
 		System.out.println("Enter the product Id...");
