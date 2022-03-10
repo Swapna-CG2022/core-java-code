@@ -1,9 +1,0 @@
-package arraysandforloopexample;
-
-public class ArrayInitializationDemo {
-	
-	public static void main(String[] args) {
-		char[] word = {'B','Z','A','Y','W','D'};
-	}
-
-}

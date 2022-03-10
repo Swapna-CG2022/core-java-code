@@ -20,7 +20,8 @@ public class Student {
 	
 	Scanner sc  = new Scanner(System.in);
 	//methods to access above variables
-	void readStudentDetails() throws ParseException {
+	void readStudentDetails()  {
+	  try {
 		System.out.println("Enter the Student data");
 		System.out.println("Enter the student id");
 		studentId = sc.nextInt();
@@ -58,6 +59,9 @@ public class Student {
 		}else {
 			System.out.println("Enter email in specified format (ex:- swapna@gmail.com)");
 		}
+	  }catch (Exception e) {
+		e.printStackTrace();
+	}
 	}
 	
 	@SuppressWarnings("deprecation")
